@@ -46,3 +46,11 @@ exports.listSchools = (req, res) => {
         res.json(sorted);
     });
 };
+
+db.query("SELECT 1", (err, result) => {
+    if (err) {
+        console.error("DB TEST ERROR:", err);
+    } else {
+        console.log("DB TEST OK");
+    }
+});
